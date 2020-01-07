@@ -1,0 +1,82 @@
+.modal
+{
+    background: white;
+    margin-right:25%;
+    margin-left:25%;
+    margin-top:10%;
+    text-align: initial;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  
+}
+
+*:focus {
+    outline: none;
+}
+
+.modal Form input:not([type = "submit"])
+{
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid blue;
+    padding:0px;
+    padding-bottom: 8px;
+}
+
+input[type="submit"]
+{
+    border:none;
+    padding:10px;
+    background: #009933;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top:20px;
+}
+
+input[type="submit"]:hover
+{
+    background:limegreen;
+}
+
+#tableUser
+{
+    margin-top:30px;
+    text-align: center;
+}
+
+#tableUser table
+{
+    margin:auto;
+}
+
+#tableUser th
+{
+    padding: 10px;
+}
+
+.errorMessage
+{
+    width:100%;
+    text-align: center;
+    color:red;
+    margin-top:10px;
+}
+
+.delete
+{
+    border:none;
+    padding:10px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.delete:hover
+{
+    background:crimson;
+}
