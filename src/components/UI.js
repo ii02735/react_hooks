@@ -34,7 +34,7 @@ const Form = props => {
         <label htmlFor="uid">UID</label>
         <input type="number" name="uid" value={uid} onChange={(event) => { (event.target.value < 0) ? setUid(0) : setUid(event.target.value) }} />
         <div className="errorMessage">{ error }</div>
-        <input type="submit" value="Soumettre" />
+        <input type="submit" value={props.hello} />
     </form>
     <ListUsers users={users} removeHandler={removeHandler}/>
     </>);
@@ -97,9 +97,10 @@ const ListUsers = React.memo(props => {
 
 const UI = props => { //because UI will continue to change, there is no need to put memo here
     const modal = <section className="modal">
-        <h3>Ajouter un nouvel utilisateur</h3>
         {props.children}
-        <Form />
+        <h3>Ajouter un nouvel utilisateur</h3>
+        
+	<Form hello="world"/>
     </section>
 
     useEffect(() => {
